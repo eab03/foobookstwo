@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+# New route
+Route::get('/example', function() {
+    echo Hash::make('secret123');
 });
+
+Route::get('/', 'WelcomeController');
+
+Route::get('/books', 'BookController@index');
+
+Route::get('/books/{title?}', 'BookController@view');
