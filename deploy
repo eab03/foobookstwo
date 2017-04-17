@@ -3,7 +3,7 @@
 # Notes:
 # This file must have executable permissions in order to run: chmod +x deploy
 # This file assumes you have a SSH key working for connections to your DigitalOcean server
-
+# (My note: to run use ./deploy)
 
 #
 # CONFIGURATION
