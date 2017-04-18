@@ -74,7 +74,7 @@ Route::get('/example', function() {
     echo Hash::make('secret123');
 });
 
-Route::get('/debug', function() {
+/*Route::get('/debug', function() {
 
 	echo '<pre>';
 
@@ -85,7 +85,7 @@ Route::get('/debug', function() {
 	if(config('app.debug')) echo "Yes"; else echo "No";
 
 	echo '<h1>Database Config</h1>';
-    	echo 'DB defaultStringLength: '.Illuminate\Database\Schema\Builder::$defaultStringLength;
+    	echo 'DB defaultStringLength: '.Illuminate\Database\Schema\Builder::$defaultStringLength;*/
     	/*
 	The following commented out line will print your MySQL credentials.
 	Uncomment this line only if you're facing difficulties connecting to the database and you
@@ -95,7 +95,7 @@ Route::get('/debug', function() {
         */
 	//print_r(config('database.connections.mysql'));
 
-	echo '<h1>Test Database Connection</h1>';
+	/*echo '<h1>Test Database Connection</h1>';
 	try {
 		$results = DB::select('SHOW DATABASES;');
 		echo '<strong style="background-color:green; padding:5px;">Connection confirmed</strong>';
@@ -108,7 +108,7 @@ Route::get('/debug', function() {
 
 	echo '</pre>';
 
-});
+});*/
 
 if(App::environment('local')) {
 
